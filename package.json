@@ -4,10 +4,10 @@
 	"description": "",
 	"author": "Denis Gorbunov",
 	"scripts": {
-		"start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline",
-		"typings": "./node_modules/typings/dist/bin.js install",
-		"webpack": "./node_modules/webpack/bin/webpack.js",
-		"watch": "./node_modules/webpack/bin/webpack.js --watch"
+		"start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline",
+		"typings": "node ./node_modules/typings/dist/bin.js install",
+		"webpack": "node ./node_modules/webpack/bin/webpack.js",
+		"watch": "node ./node_modules/webpack/bin/webpack.js --watch"
 	},  
 	"dependencies": {
 		"@angular/common": "2.0.0",
