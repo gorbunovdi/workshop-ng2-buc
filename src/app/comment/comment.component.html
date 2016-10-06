@@ -1,20 +1,8 @@
 <div class="row">
   <div class="col s4">
-    <div class="card-panel">
-      <div>
-        <input placeholder="Your comment" [(ngModel)]="newComment.text" type="text" class="validate">
-      </div>
-      <div *ngIf="newComment.text.length">
-        <a (click)="sendComment()" class="waves-effect waves-light btn blue">
-          Send comment
-          <i class="material-icons right">send</i>
-        </a>
-      </div>
-    </div>
+    <comment-new></comment-new>
   </div>
   <div class="col s4" *ngFor="let comment of comments">
-    <div class="card-panel">
-      {{ comment.text }}
-    </div>
+    <comment-view [comment]="comment"></comment-view>
   </div>
 </div>
