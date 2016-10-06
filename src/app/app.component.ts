@@ -4,4 +4,4 @@ import { Component } from '@angular/core';
   selector: 'workshop-app',
   template: require('./app.component.html')
 })
-export class AppComponent { }
+export class AppComponent {}
