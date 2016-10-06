@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Comment } from '../comment.model';
 import { CommentService } from '../comment.service';
 

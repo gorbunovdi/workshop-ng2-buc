@@ -15,4 +15,8 @@ export class CommentComponent {
   get comments(): Comment[] {
     return this.commentService.getComments();
   }
+
+  private addVote(comment: Comment): void {
+    this.commentService.addVote(comment);
+  }
 }

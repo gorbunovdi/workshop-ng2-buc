@@ -16,4 +16,9 @@ export class CommentService {
   public createEmptyComment(): Comment {
     return {text: '', votes: 0};
   }
+
+  public addVote(comment: Comment): Comment {
+    comment.votes++;
+    return comment;
+  }
 }

@@ -3,6 +3,6 @@
     <comment-new></comment-new>
   </div>
   <div class="col s4" *ngFor="let comment of comments">
-    <comment-view [comment]="comment"></comment-view>
+    <comment-view [comment]="comment" (onUpvote)="addVote($event)"></comment-view>
   </div>
 </div>
